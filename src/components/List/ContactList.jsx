@@ -1,4 +1,4 @@
-import s from './ContactList.module.css';
+import s from './ContactList.module.scss';
 export default function ContactList({contacts, filter, handlerDelContact}) {
   console.log(contacts);
   return (

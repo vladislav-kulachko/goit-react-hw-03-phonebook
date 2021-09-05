@@ -1,4 +1,4 @@
-import s from './ContactFilter.module.css';
+import s from './ContactFilter.module.scss';
 export default function ContactFilter({filterValue, handlerFindContact}) {
   return (
     <label className={s.label}>

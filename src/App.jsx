@@ -1,9 +1,10 @@
 import {Component} from 'react';
 import {v4 as uuidv4} from 'uuid';
-import s from './App.module.css';
+import s from './App.module.scss';
 import ContactForm from './components/Form/ContactForm';
 import ContactFilter from './components/Filter/ContactFilter';
 import ContactList from './components/List/ContactList';
+
 export default class App extends Component {
   state = {
     contacts: [],
@@ -33,7 +34,7 @@ export default class App extends Component {
     }));
   };
 
-  componentDidUpdate(prevProps, prevState) {
+  componentDidUpdate(prevState) {
     if (this.state.contacts !== prevState) {
       localStorage.setItem('contacts', JSON.stringify(this.state.contacts));
     }
