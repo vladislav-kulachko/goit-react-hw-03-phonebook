@@ -1,6 +1,5 @@
 import s from './ContactList.module.scss';
 export default function ContactList({contacts, filter, handlerDelContact}) {
-  console.log(contacts);
   return (
     <ul className={s.list}>
       {contacts.length === 0 ? (
